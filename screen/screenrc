@@ -1,0 +1,4 @@
+caption always
+caption string "%{= Kk}%-w%{= Wk}%n %t%{= Kk}%+w"
+startup_message off
+vbell off
