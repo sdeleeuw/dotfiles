@@ -1,8 +1,33 @@
+
+" disable vi compatibility
+set nocompatible
+
+" enable line numbering
 set number
 
-set autoindent
-set smartindent
+" temporary disable file type detection
+filetype off
 
-set expandtab
-set shiftwidth=4
-set tabstop=4
+" Python
+au BufNewFile,BufRead *.py
+  \ set tabstop=4       |
+  \ set softtabstop=4   |
+  \ set shiftwidth=4    |
+  \ set expandtab       |
+  \ set autoindent      |
+  \ set textwidth=119   |
+  \ set fileformat=unix |
+
+" HTML/CSS/JS
+au BufNewFile,BufRead *.html, *.css, *.js
+  \ set tabstop=4       |
+  \ set softtabstop=4   |
+  \ set shiftwidth=4    |
+  \ set expandtab       |
+  \ set autoindent      |
+  \ set textwidth=119   |
+  \ set fileformat=unix |
+
+" enable file type detection
+filetype plugin indent on
+
