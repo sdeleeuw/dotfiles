@@ -1,4 +1,4 @@
 caption always
-caption string "%{= Kk}%-w%{= Wk}%n %t%{= Kk}%+w"
+caption string "%{= bw} %H | %S [ %{= bk}%-w%{= Bk}%n %t%{= bk}%+w%{= bw}%= ] %l | %Y-%m-%d %c "
 startup_message off
 vbell off
