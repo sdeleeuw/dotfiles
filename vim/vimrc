@@ -19,7 +19,7 @@ au BufNewFile,BufRead *.py
   \ set fileformat=unix |
 
 " HTML/CSS/JS
-au BufNewFile,BufRead *.html, *.css, *.js
+au BufNewFile,BufRead *.html,*.css,*.js
   \ set tabstop=4       |
   \ set softtabstop=4   |
   \ set shiftwidth=4    |
