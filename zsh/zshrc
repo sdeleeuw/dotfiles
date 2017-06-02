@@ -23,4 +23,15 @@ source $HOME/.zsh/plugins/python.plugin.zsh
 source $HOME/.zsh/plugins/virtualenv.plugin.zsh
 source $HOME/.zsh/plugins/virtualenvwrapper.plugin.zsh
 source $HOME/.zsh/plugins/git.plugin.zsh
+source $HOME/.zsh/plugins/git-prompt-info.plugin.zsh
 source $HOME/.zsh/plugins/docker-compose.plugin.zsh
+
+# prompt
+setopt promptsubst
+PROMPT='$(virtualenv_prompt_info)$(git_prompt_info)%~%# '
+ZSH_THEME_VIRTUALENV_PREFIX='['
+ZSH_THEME_VIRTUALENV_SUFFIX='] '
+ZSH_THEME_GIT_PROMPT_PREFIX='['
+ZSH_THEME_GIT_PROMPT_SUFFIX='] '
+ZSH_THEME_GIT_PROMPT_DIRTY='!'
+ZSH_THEME_GIT_PROMPT_CLEAN=''

@@ -11,6 +11,7 @@ cp plugins/python.plugin.zsh $PLUGINS_DIR/
 cp plugins/virtualenv.plugin.zsh $PLUGINS_DIR/
 cp plugins/virtualenvwrapper.plugin.zsh $PLUGINS_DIR/
 cp plugins/git.plugin.zsh $PLUGINS_DIR/
+cp plugins/git-prompt-info.plugin.zsh $PLUGINS_DIR/
 cp plugins/docker-compose.plugin.zsh $PLUGINS_DIR/
 
 cp functions/_docker $FUNCTIONS_DIR/
