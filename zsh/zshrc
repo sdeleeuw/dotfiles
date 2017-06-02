@@ -1,0 +1,19 @@
+# added by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+#setopt nomatch
+#unsetopt appendhistory autocd beep extendedglob notify
+bindkey -v
+
+# added by compinstall
+zstyle :compinstall filename '/home/sander/.zshrc'
+autoload -Uz compinit
+compinit
+
+KEYTIMEOUT=1
+
+# plugins
+source $HOME/.zsh/base16-default-dark.sh
+source $HOME/.zsh/specialkeys.plugin.zsh
+source $HOME/.zsh/git.plugin.zsh
