@@ -17,3 +17,4 @@ KEYTIMEOUT=1
 source $HOME/.zsh/base16-default-dark.sh
 source $HOME/.zsh/specialkeys.plugin.zsh
 source $HOME/.zsh/git.plugin.zsh
+source $HOME/.zsh/docker-compose.plugin.zsh
