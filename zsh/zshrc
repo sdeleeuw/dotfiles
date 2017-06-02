@@ -19,5 +19,8 @@ KEYTIMEOUT=1
 # plugins
 source $HOME/.zsh/plugins/base16-default-dark.sh
 source $HOME/.zsh/plugins/specialkeys.plugin.zsh
+source $HOME/.zsh/plugins/python.plugin.zsh
+source $HOME/.zsh/plugins/virtualenv.plugin.zsh
+source $HOME/.zsh/plugins/virtualenvwrapper.plugin.zsh
 source $HOME/.zsh/plugins/git.plugin.zsh
 source $HOME/.zsh/plugins/docker-compose.plugin.zsh
