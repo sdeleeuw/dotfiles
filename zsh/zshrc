@@ -6,15 +6,15 @@ SAVEHIST=1000
 #unsetopt appendhistory autocd beep extendedglob notify
 bindkey -v
 
+# functions
+fpath=($HOME/.zsh/functions $fpath)
+
 # added by compinstall
 zstyle :compinstall filename '/home/sander/.zshrc'
 autoload -Uz compinit
 compinit
 
 KEYTIMEOUT=1
-
-# functions
-fpath=($HOME/.zsh/functions $fpath)
 
 # plugins
 source $HOME/.zsh/plugins/base16-default-dark.sh
