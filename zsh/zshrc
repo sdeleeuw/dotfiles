@@ -13,8 +13,11 @@ compinit
 
 KEYTIMEOUT=1
 
+# functions
+fpath=($HOME/.zsh/functions $fpath)
+
 # plugins
-source $HOME/.zsh/base16-default-dark.sh
-source $HOME/.zsh/specialkeys.plugin.zsh
-source $HOME/.zsh/git.plugin.zsh
-source $HOME/.zsh/docker-compose.plugin.zsh
+source $HOME/.zsh/plugins/base16-default-dark.sh
+source $HOME/.zsh/plugins/specialkeys.plugin.zsh
+source $HOME/.zsh/plugins/git.plugin.zsh
+source $HOME/.zsh/plugins/docker-compose.plugin.zsh

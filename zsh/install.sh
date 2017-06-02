@@ -1,10 +1,15 @@
 #!/bin/sh
 
-mkdir -p $HOME/.zsh
+PLUGINS_DIR=$HOME/.zsh/plugins
+FUNCTIONS_DIR=$HOME/.zsh/functions
 
-cp base16-default-dark.sh $HOME/.zsh/
-cp specialkeys.plugin.zsh $HOME/.zsh/
-cp git.plugin.zsh $HOME/.zsh/
-cp docker-compose.plugin.zsh $HOME/.zsh/
+mkdir -p $PLUGINS_DIR $FUNCTIONS_DIR
+
+cp plugins/base16-default-dark.sh $PLUGINS_DIR/
+cp plugins/specialkeys.plugin.zsh $PLUGINS_DIR/
+cp plugins/git.plugin.zsh $PLUGINS_DIR/
+cp plugins/docker-compose.plugin.zsh $PLUGINS_DIR/
+
+cp functions/_docker-compose $FUNCTIONS_DIR/
 
 cp zshrc $HOME/.zshrc
