@@ -14,18 +14,18 @@ elif [[ -f "/etc/bash_completion.d/virtualenvwrapper" ]]; then
     source "/etc/bash_completion.d/virtualenvwrapper"
   }
 else
-  print "[oh-my-zsh] virtualenvwrapper plugin: Cannot find ${virtualenvwrapper}.\n"\
+  print "virtualenvwrapper plugin: Cannot find ${virtualenvwrapper}.\n"\
         "Please install with \`pip install virtualenvwrapper\`" >&2
   return
 fi
 if ! type workon &>/dev/null; then
-  print "[oh-my-zsh] virtualenvwrapper plugin: shell function 'workon' not defined.\n"\
+  print "virtualenvwrapper plugin: shell function 'workon' not defined.\n"\
         "Please check ${virtualenvwrapper}" >&2
   return
 fi
 
 if [[ "$WORKON_HOME" == "" ]]; then
-  print "[oh-my-zsh] \$WORKON_HOME is not defined so plugin virtualenvwrapper will not work" >&2
+  print "\$WORKON_HOME is not defined so plugin virtualenvwrapper will not work" >&2
   return
 fi
 
