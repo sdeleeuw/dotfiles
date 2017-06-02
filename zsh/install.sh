@@ -10,6 +10,7 @@ cp plugins/specialkeys.plugin.zsh $PLUGINS_DIR/
 cp plugins/git.plugin.zsh $PLUGINS_DIR/
 cp plugins/docker-compose.plugin.zsh $PLUGINS_DIR/
 
+cp functions/_docker $FUNCTIONS_DIR/
 cp functions/_docker-compose $FUNCTIONS_DIR/
 
 cp zshrc $HOME/.zshrc
