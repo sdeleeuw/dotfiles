@@ -8,26 +8,21 @@ set number
 " temporary disable file type detection
 filetype off
 
-" Python
-au BufNewFile,BufRead *.py
-  \ set tabstop=4       |
-  \ set softtabstop=4   |
-  \ set shiftwidth=4    |
-  \ set expandtab       |
-  \ set autoindent      |
-  \ set textwidth=119   |
-  \ set fileformat=unix |
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+set textwidth=119
+set fileformat=unix
 
-" HTML/CSS/JS
-au BufNewFile,BufRead *.html,*.css,*.js
-  \ set tabstop=4       |
-  \ set softtabstop=4   |
-  \ set shiftwidth=4    |
-  \ set expandtab       |
-  \ set autoindent      |
-  \ set textwidth=119   |
-  \ set fileformat=unix |
+" YAML
+au BufNewFile,BufRead *.yaml,*.yml
+    \ set tabstop=2     |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2
 
 " enable file type detection
 filetype plugin indent on
 
+colorscheme molokai
