@@ -1,0 +1,69 @@
+--- config.def.h	2019-10-03 21:29:39.431401964 +0200
++++ config.h	2019-10-03 23:16:02.913262339 +0200
+@@ -84,31 +84,30 @@
+ 
+ /* Terminal colors (16 first used in escape sequence) */
+ static const char *colorname[] = {
+-	/* 8 normal colors */
+-	"black",
+-	"red3",
+-	"green3",
+-	"yellow3",
+-	"blue2",
+-	"magenta3",
+-	"cyan3",
+-	"gray90",
+-
+-	/* 8 bright colors */
+-	"gray50",
+-	"red",
+-	"green",
+-	"yellow",
+-	"#5c5cff",
+-	"magenta",
+-	"cyan",
+-	"white",
+-
+-	[255] = 0,
+-
+-	/* more colors can be added after 255 to use with DefaultXX */
+-	"#cccccc",
+-	"#555555",
++	"#181818",  // 00 ~ base00 ~ black
++	"#ab4642",  // 01 ~ base08 ~ red
++	"#a1b56c",  // 02 ~ base0B ~ green
++	"#f7ca88",  // 03 ~ base0A ~ yellow
++	"#7cafc2",  // 04 ~ base0D ~ blue
++	"#ba8baf",  // 05 ~ base0E ~ magenta
++	"#86c1b9",  // 06 ~ base0C ~ cyan
++	"#d8d8d8",  // 07 ~ base05 ~ white
++
++	"#585858",  // 08 ~ base03 ~ black
++	"#ab4642",  // 09 ~ base08 ~ red
++	"#a1b56c",  // 10 ~ base0B ~ green
++	"#f7ca88",  // 11 ~ base0A ~ yellow
++	"#7cafc2",  // 12 ~ base0D ~ blue
++	"#ba8baf",  // 13 ~ base0E ~ magenta
++	"#86c1b9",  // 14 ~ base0C ~ cyan
++	"#f8f8f8",  // 15 ~ base07 ~ white
++
++	"#dc9656",  // 16 ~ base09
++	"#a16946",  // 17 ~ base0F
++	"#282828",  // 18 ~ base01
++	"#383838",  // 19 ~ base02
++	"#b8b8b8",  // 20 ~ base04
++	"#e8e8e8",  // 21 ~ base06
+ };
+ 
+ 
+@@ -118,8 +117,8 @@
+  */
+ unsigned int defaultfg = 7;
+ unsigned int defaultbg = 0;
+-static unsigned int defaultcs = 256;
+-static unsigned int defaultrcs = 257;
++static unsigned int defaultcs = 15;
++static unsigned int defaultrcs = 8;
+ 
+ /*
+  * Default shape of cursor
