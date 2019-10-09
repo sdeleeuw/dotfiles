@@ -1,6 +1,16 @@
---- config.def.h	2019-10-03 21:29:39.431401964 +0200
-+++ config.h	2019-10-03 23:16:02.913262339 +0200
-@@ -84,31 +84,30 @@
+diff -Naur --exclude .git --exclude config.h st.orig/config.def.h st/config.def.h
+--- st.orig/config.def.h	2019-10-09 23:19:06.068637595 +0200
++++ st/config.def.h	2019-10-09 23:23:07.296183085 +0200
+@@ -5,7 +5,7 @@
+  *
+  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
+  */
+-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
++static char *font = "DejaVu Sans Mono:size=10";
+ static int borderpx = 2;
+ 
+ /*
+@@ -84,31 +84,34 @@
  
  /* Terminal colors (16 first used in escape sequence) */
  static const char *colorname[] = {
@@ -23,12 +33,6 @@
 -	"magenta",
 -	"cyan",
 -	"white",
--
--	[255] = 0,
--
--	/* more colors can be added after 255 to use with DefaultXX */
--	"#cccccc",
--	"#555555",
 +	"#181818",  // 00 ~ base00 ~ black
 +	"#ab4642",  // 01 ~ base08 ~ red
 +	"#a1b56c",  // 02 ~ base0B ~ green
@@ -53,10 +57,16 @@
 +	"#383838",  // 19 ~ base02
 +	"#b8b8b8",  // 20 ~ base04
 +	"#e8e8e8",  // 21 ~ base06
+ 
+ 	[255] = 0,
+ 
+ 	/* more colors can be added after 255 to use with DefaultXX */
+-	"#cccccc",
+-	"#555555",
  };
  
  
-@@ -118,8 +117,8 @@
+@@ -118,8 +121,8 @@
   */
  unsigned int defaultfg = 7;
  unsigned int defaultbg = 0;
@@ -67,3 +77,15 @@
  
  /*
   * Default shape of cursor
+diff -Naur --exclude .git --exclude config.h st.orig/x.c st/x.c
+--- st.orig/x.c	2019-10-09 23:19:06.068637595 +0200
++++ st/x.c	2019-10-05 22:56:53.507162014 +0200
+@@ -712,7 +712,7 @@
+ 	XRenderColor color = { .alpha = 0xffff };
+ 
+ 	if (!name) {
+-		if (BETWEEN(i, 16, 255)) { /* 256 color */
++		if (BETWEEN(i, 22, 255)) { /* 256 color */
+ 			if (i < 6*6*6+16) { /* same colors as xterm */
+ 				color.red   = sixd_to_16bit( ((i-16)/36)%6 );
+ 				color.green = sixd_to_16bit( ((i-16)/6) %6 );
