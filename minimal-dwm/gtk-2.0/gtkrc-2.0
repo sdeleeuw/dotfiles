@@ -1,0 +1,7 @@
+gtk-icon-theme-name="PiX"
+gtk-theme-name="PiXflat"
+gtk-font-name="DejaVu Sans Book 10"
+gtk-xft-antialias=1
+gtk-xft-hinting=1
+gtk-xft-hintstyle="hintfull"
+gtk-xft-rgba="rgb"
