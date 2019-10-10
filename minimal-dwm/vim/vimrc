@@ -1,0 +1,31 @@
+
+" enable line numbering
+set number
+
+" enable syntax highlighting
+syntax on
+
+" activate base16 color scheme
+let base16colorspace=256
+colorscheme base16-default-dark
+
+" temporary disable file type detection
+filetype off
+
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+set textwidth=119
+set fileformat=unix
+
+" YAML
+au BufNewFile,BufRead *.yaml,*.yml
+    \ set tabstop=2     |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2
+
+" enable file type detection
+filetype plugin indent on
+
