@@ -1,6 +1,6 @@
-diff -Naur --exclude .git --exclude config.h st.orig/config.def.h st/config.def.h
---- st.orig/config.def.h	2019-10-09 23:19:06.068637595 +0200
-+++ st/config.def.h	2019-10-09 23:23:07.296183085 +0200
+diff -Naur '--exclude=.git' st.orig/config.def.h st/config.def.h
+--- st.orig/config.def.h	2019-10-16 12:40:18.066548902 +0200
++++ st/config.def.h	2019-10-16 12:40:46.155963056 +0200
 @@ -5,7 +5,7 @@
   *
   * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
@@ -77,10 +77,10 @@ diff -Naur --exclude .git --exclude config.h st.orig/config.def.h st/config.def.
  
  /*
   * Default shape of cursor
-diff -Naur --exclude .git --exclude config.h st.orig/x.c st/x.c
---- st.orig/x.c	2019-10-09 23:19:06.068637595 +0200
-+++ st/x.c	2019-10-05 22:56:53.507162014 +0200
-@@ -712,7 +712,7 @@
+diff -Naur '--exclude=.git' st.orig/x.c st/x.c
+--- st.orig/x.c	2019-10-16 12:40:18.076548833 +0200
++++ st/x.c	2019-10-16 12:40:46.155963056 +0200
+@@ -733,7 +733,7 @@
  	XRenderColor color = { .alpha = 0xffff };
  
  	if (!name) {
